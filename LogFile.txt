@@ -1,0 +1,12 @@
+﻿2020-10-10 11:52:22.2103 DEBUG User entered the analyse mood method
+2020-10-10 11:52:22.2283 INFO User mood is sad
+2020-10-10 11:52:22.3556 DEBUG User entered the analyse mood method
+2020-10-10 11:52:22.3556 INFO User mood is happy
+2020-10-10 11:52:47.1885 DEBUG User entered the analyse mood method
+2020-10-10 11:52:47.2055 INFO User mood is sad
+2020-10-10 11:52:47.2204 DEBUG User entered the analyse mood method
+2020-10-10 11:52:47.2204 INFO User mood is sad
+2020-10-10 11:53:20.6166 DEBUG User entered the analyse mood method
+2020-10-10 11:53:20.6341 INFO User mood is sad
+2020-10-10 11:53:20.6341 DEBUG User entered the analyse mood method
+2020-10-10 11:53:20.6341 INFO User mood is sad
