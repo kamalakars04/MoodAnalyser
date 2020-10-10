@@ -8,7 +8,7 @@ namespace MSTestForMoodAnalyser
     {
         MoodAnalyse moodAnalyse;
         /// <summary>
-        /// Tests the analyse mood method by giving sad and expecting sad
+        /// TC 1.1 Tests the analyse mood method by giving sad and expecting sad
         /// </summary>
         [DataRow("Iam in sad mood")]
         [TestMethod]
@@ -23,7 +23,7 @@ namespace MSTestForMoodAnalyser
         }
 
         /// <summary>
-        /// doesnt give sad and get happy.
+        /// TC 1.2 doesnt give sad and get happy.
         /// </summary>
         /// <param name="message">The message.</param>
         [DataRow("Iam in happy mood")]
@@ -39,19 +39,35 @@ namespace MSTestForMoodAnalyser
         }
 
         /// <summary>
-        /// Gives null and get happy.
+        /// TC 3.1 when Gives null then get exception message.
         /// </summary>
         /// <param name="message">The message.</param>
-        [DataRow(null)]
-        [TestMethod]
-        public void GiveNullAndGetHappy(string message)
+        //[DataRow(null)]
+        //[TestMethod]
+        public void GiveNullAndGetExceptionMessage(string message)
         {
             //Arrange
             moodAnalyse = new MoodAnalyse(message);
             //Act
             var actual = moodAnalyse.AnalyseMood();
             //Assert
-            Assert.AreEqual("happy mood", actual);
+            Assert.AreEqual("MoodAnalyser exception : Null mood not accepted", actual);
+        }
+
+        /// <summary>
+        /// TC 3.2 When Gives empty then gets exception message.
+        /// </summary>
+        /// <param name="message">The message.</param>
+        [DataRow("")]
+        [TestMethod]
+        public void GiveEmptyAndGetExceptionMessage(string message)
+        {
+            //Arrange
+            moodAnalyse = new MoodAnalyse(message);
+            //Act
+            var actual = moodAnalyse.AnalyseMood();
+            //Assert
+            Assert.AreEqual("MoodAnalyser exception : Mood cannot be empty", actual);
         }
     }
 }

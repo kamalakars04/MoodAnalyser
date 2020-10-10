@@ -55,3 +55,64 @@
 2020-10-10 12:59:01.9834 INFO Initiated message through a contructor
 2020-10-10 12:59:01.9834 DEBUG User entered the analyse mood method
 2020-10-10 12:59:01.9834 INFO User mood is sad
+2020-10-10 13:19:09.0743 INFO Initiated message through a contructor
+2020-10-10 13:19:09.0949 DEBUG User entered the analyse mood method
+2020-10-10 13:19:09.0949 INFO User mood is happy
+2020-10-10 13:19:09.1150 INFO Initiated message through a contructor
+2020-10-10 13:19:09.1150 DEBUG User entered the analyse mood method
+2020-10-10 13:19:09.1169 INFO Initiated message through a contructor
+2020-10-10 13:19:09.1169 DEBUG User entered the analyse mood method
+2020-10-10 13:19:09.1169 INFO User mood is sad
+2020-10-10 19:13:04.2422 INFO Initiated message through a contructor
+2020-10-10 19:13:04.3102 DEBUG User entered the analyse mood method
+2020-10-10 19:13:04.3254 INFO User mood is happy
+2020-10-10 19:13:50.3819 INFO Initiated message through a contructor
+2020-10-10 19:13:50.4233 DEBUG User entered the analyse mood method
+2020-10-10 19:13:50.4638 INFO User mood is happy
+2020-10-10 19:13:58.4621 INFO Initiated message through a contructor
+2020-10-10 19:13:58.5121 DEBUG User entered the analyse mood method
+2020-10-10 19:13:58.5378 INFO User mood is happy
+2020-10-10 19:14:05.0880 INFO Initiated message through a contructor
+2020-10-10 19:14:05.1657 DEBUG User entered the analyse mood method
+2020-10-10 19:14:32.0207 INFO Initiated message through a contructor
+2020-10-10 19:14:32.0991 DEBUG User entered the analyse mood method
+2020-10-10 19:16:09.2544 INFO Initiated message through a contructor
+2020-10-10 19:16:09.2877 DEBUG User entered the analyse mood method
+2020-10-10 19:18:24.7941 INFO Initiated message through a contructor
+2020-10-10 19:18:24.8745 DEBUG User entered the analyse mood method
+2020-10-10 19:19:30.2043 INFO Initiated message through a contructor
+2020-10-10 19:19:30.2382 DEBUG User entered the analyse mood method
+2020-10-10 21:43:42.1204 INFO Initiated message through a contructor
+2020-10-10 21:43:42.1378 DEBUG User entered the analyse mood method
+2020-10-10 21:43:42.1510 INFO Initiated message through a contructor
+2020-10-10 21:43:42.1510 DEBUG User entered the analyse mood method
+2020-10-10 21:45:12.4689 INFO Initiated message through a contructor
+2020-10-10 21:45:12.4867 DEBUG User entered the analyse mood method
+2020-10-10 21:46:52.8798 INFO Initiated message through a contructor
+2020-10-10 21:46:52.8995 DEBUG User entered the analyse mood method
+2020-10-10 21:51:30.5781 INFO Initiated message through a contructor
+2020-10-10 21:51:30.5954 DEBUG User entered the analyse mood method
+2020-10-10 21:51:30.6141 INFO Initiated message through a contructor
+2020-10-10 21:51:30.6141 DEBUG User entered the analyse mood method
+2020-10-10 21:51:30.6141 INFO User mood is happy
+2020-10-10 21:51:30.6161 INFO Initiated message through a contructor
+2020-10-10 21:51:30.6161 DEBUG User entered the analyse mood method
+2020-10-10 21:51:30.6161 INFO User mood is sad
+2020-10-10 21:53:17.7046 INFO Initiated message through a contructor
+2020-10-10 21:53:17.7361 DEBUG User entered the analyse mood method
+2020-10-10 21:55:19.5841 INFO Initiated message through a contructor
+2020-10-10 21:55:19.6177 DEBUG User entered the analyse mood method
+2020-10-10 22:08:23.5780 INFO Initiated message through a contructor
+2020-10-10 22:08:23.6098 DEBUG User entered the analyse mood method
+2020-10-10 22:08:23.6728 INFO Initiated message through a contructor
+2020-10-10 22:08:23.6728 DEBUG User entered the analyse mood method
+2020-10-10 22:08:23.6728 INFO Initiated message through a contructor
+2020-10-10 22:08:23.6728 DEBUG User entered the analyse mood method
+2020-10-10 22:10:40.1611 INFO Initiated message through a contructor
+2020-10-10 22:10:40.1804 DEBUG User entered the analyse mood method
+2020-10-10 22:10:40.2014 INFO Initiated message through a contructor
+2020-10-10 22:10:40.2014 DEBUG User entered the analyse mood method
+2020-10-10 22:10:40.2014 INFO User mood is happy
+2020-10-10 22:10:40.2014 INFO Initiated message through a contructor
+2020-10-10 22:10:40.2014 DEBUG User entered the analyse mood method
+2020-10-10 22:10:40.2014 INFO User mood is sad
