@@ -37,5 +37,21 @@ namespace MSTestForMoodAnalyser
             //Assert
             Assert.AreEqual("happy mood", actual);
         }
+
+        /// <summary>
+        /// Gives null and get happy.
+        /// </summary>
+        /// <param name="message">The message.</param>
+        [DataRow(null)]
+        [TestMethod]
+        public void GiveNullAndGetHappy(string message)
+        {
+            //Arrange
+            moodAnalyse = new MoodAnalyse(message);
+            //Act
+            var actual = moodAnalyse.AnalyseMood();
+            //Assert
+            Assert.AreEqual("happy mood", actual);
+        }
     }
 }

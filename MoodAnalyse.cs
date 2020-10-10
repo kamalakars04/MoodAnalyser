@@ -12,7 +12,7 @@ namespace MoodAnalyser
         public MoodAnalyse(string message)
         {
             logger.Info("Initiated message through a contructor");
-            this.message = message.ToLower();
+            this.message = message;
         }
         /// <summary>
         /// Analyses the mood.
@@ -21,19 +21,25 @@ namespace MoodAnalyser
         /// <returns></returns>
         public string AnalyseMood()
         {
-            logger.Debug("User entered the analyse mood method");
-            if (message.ToLower().Contains("sad"))
+            try
             {
-                logger.Info("User mood is sad");
-                return "sad mood";
+                logger.Debug("User entered the analyse mood method");
+                if (message.ToLower().Contains("sad"))
+                {
+                    logger.Info("User mood is sad");
+                    return "sad mood";
+                }
+
+                else
+                {
+                    logger.Info("User mood is happy");
+                    return "happy mood";
+                }
             }
-               
-            else
+            catch
             {
-                logger.Info("User mood is happy");
                 return "happy mood";
             }
-            
         }
     }
 }
