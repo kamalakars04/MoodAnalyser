@@ -7249,8 +7249,8 @@
     },
     "MoodAnalyser/1.0.0": {
       "type": "project",
-      "path": "../MoodAnalyser/MoodAnalyser.csproj",
-      "msbuildProject": "../MoodAnalyser/MoodAnalyser.csproj"
+      "path": "../MoodAnalyser.csproj",
+      "msbuildProject": "../MoodAnalyser.csproj"
     }
   },
   "projectFileDependencyGroups": {
@@ -7268,11 +7268,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\kamalakar\\Desktop\\bridge labs\\MSTestForMoodAnalyser\\MSTestForMoodAnalyser.csproj",
+      "projectUniqueName": "C:\\Users\\kamalakar\\Desktop\\bridge labs\\MoodAnalyser\\MSTestForMoodAnalyser\\MSTestForMoodAnalyser.csproj",
       "projectName": "MSTestForMoodAnalyser",
-      "projectPath": "C:\\Users\\kamalakar\\Desktop\\bridge labs\\MSTestForMoodAnalyser\\MSTestForMoodAnalyser.csproj",
+      "projectPath": "C:\\Users\\kamalakar\\Desktop\\bridge labs\\MoodAnalyser\\MSTestForMoodAnalyser\\MSTestForMoodAnalyser.csproj",
       "packagesPath": "C:\\Users\\kamalakar\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\kamalakar\\Desktop\\bridge labs\\MSTestForMoodAnalyser\\obj\\",
+      "outputPath": "C:\\Users\\kamalakar\\Desktop\\bridge labs\\MoodAnalyser\\MSTestForMoodAnalyser\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\kamalakar\\AppData\\Roaming\\NuGet\\NuGet.Config",
