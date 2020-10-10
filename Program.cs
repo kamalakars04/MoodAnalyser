@@ -7,10 +7,12 @@ namespace MoodAnalyser
         static void Main(string[] args)
         {
             Console.WriteLine("Welcom to Mood Analyser");
+            //Ask the user to enter his mood
             Console.WriteLine("Enter the state of mood");
             string message = Console.ReadLine();
+            //Call AnalyseMood method to check for mood
             MoodAnalyse moodAnalyse = new MoodAnalyse(message);
-            moodAnalyse.AnalyseMood();
+            string mood = moodAnalyse.AnalyseMood();
         }
     }
 }

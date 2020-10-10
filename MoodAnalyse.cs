@@ -24,21 +24,28 @@ namespace MoodAnalyser
             try
             {
                 logger.Debug("User entered the analyse mood method");
+                //If input is empty then throw exception of empty type
+                if (message == string.Empty)
+                    throw new MoodAnalyserExceptions(MoodAnalyserExceptions.ExceptionType.EMPTY_TYPE, "Mood cannot be empty");
+                //If input is null then throw exception of null type
+                if (message == null)
+                    throw new MoodAnalyserExceptions(MoodAnalyserExceptions.ExceptionType.NULL_TYPE, "Null mood not accepted");
                 if (message.ToLower().Contains("sad"))
                 {
                     logger.Info("User mood is sad");
                     return "sad mood";
                 }
 
-                else
+                else 
                 {
                     logger.Info("User mood is happy");
                     return "happy mood";
                 }
             }
-            catch
+            catch (MoodAnalyserExceptions e)
             {
-                return "happy mood";
+                Console.WriteLine(e.Message);
+                return e.Message;
             }
         }
     }
