@@ -1,20 +1,33 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Text;
+using NLog;
 
 namespace MoodAnalyser
 {
-    class MoodAnalyse
+    public class MoodAnalyse
     {
-        //variable
-        private string message;
+        private readonly Logger logger = LogManager.GetCurrentClassLogger();
         /// <summary>
-        /// Initializes a new instance of the <see cref="MoodAnalyser"/> class.
+        /// Analyses the mood.
         /// </summary>
         /// <param name="message">The message.</param>
-        public MoodAnalyser(string message)
+        /// <returns></returns>
+        public string AnalyseMood(string message)
         {
-            this.message = message.ToLower();
+            logger.Debug("User entered the analyse mood method");
+            if (message.ToLower().Contains("sad"))
+            {
+                logger.Info("User mood is sad");
+                return "sad mood";
+            }
+               
+            else
+            {
+                logger.Info("User mood is happy");
+                return "happy mood";
+            }
+            
         }
     }
 }
