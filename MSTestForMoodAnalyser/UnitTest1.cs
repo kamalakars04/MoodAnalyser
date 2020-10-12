@@ -11,7 +11,7 @@ namespace MSTestForMoodAnalyser
         /// TC 1.1 Tests the analyse mood method by giving sad and expecting sad
         /// </summary>
         [DataRow("Iam in sad mood")]
-        [TestMethod , TestCategory("sad mood")]
+        [TestMethod , TestCategory("sad mood"), TestCategory("TC 1")]
         public void GiveSadAndGetSad(string message)
         {
             //Arrange
@@ -27,7 +27,7 @@ namespace MSTestForMoodAnalyser
         /// </summary>
         /// <param name="message">The message.</param>
         [DataRow("Iam in happy mood")]
-        [TestMethod , TestCategory("Happy mood")]
+        [TestMethod , TestCategory("Happy mood"), TestCategory("TC 1")]
         public void GiveHappyAndGetHappy(string message)
         {
             //Arrange
@@ -43,7 +43,7 @@ namespace MSTestForMoodAnalyser
         /// </summary>
         /// <param name="message">The message.</param>
         [DataRow(null)]
-        [TestMethod , TestCategory("CustomException")]
+        [TestMethod , TestCategory("CustomException"), TestCategory("TC 3")]
         public void GiveNullAndGetExceptionMessage(string message)
         {
             //Arrange
@@ -59,7 +59,7 @@ namespace MSTestForMoodAnalyser
         /// </summary>
         /// <param name="message">The message.</param>
         [DataRow("")]
-        [TestMethod , TestCategory("CustomException")]
+        [TestMethod , TestCategory("CustomException"), TestCategory("TC 3")]
         public void GiveEmptyAndGetExceptionMessage(string message)
         {
             //Arrange
@@ -76,7 +76,7 @@ namespace MSTestForMoodAnalyser
         /// <param name="className"></param>
         /// <param name="constructor"></param>
         [DataRow("MoodAnalyse","MoodAnalyse")]
-        [TestMethod , TestCategory("Reflection")]
+        [TestMethod , TestCategory("Reflection"), TestCategory("TC 4")]
         public void CreateObjectOfMoodAnalyse(string className , string constructor)
         {
             //Arrange
@@ -86,7 +86,6 @@ namespace MSTestForMoodAnalyser
             var obj = MoodAnalyserFactory.CreateMoodAnalyserObject(className, constructor);
             //Assert
             obj.Equals(moodAnalyse);
-
         }
 
         /// <summary>
@@ -95,7 +94,7 @@ namespace MSTestForMoodAnalyser
         /// <param name="className"></param>
         /// <param name="constructor"></param>
         [DataRow("MoodAnalyser.MoodAnalys", "MoodAnalyse")]
-        [TestMethod, TestCategory("Reflection")]
+        [TestMethod, TestCategory("Reflection"), TestCategory("TC 4")]
         public void CreateObjectOfMoodAnalyseInvalidClassName(string className, string constructor)
         {
             //Act
@@ -116,13 +115,79 @@ namespace MSTestForMoodAnalyser
         /// <param name="className"></param>
         /// <param name="constructor"></param>
         [DataRow("MoodAnalyser.MoodAnalyse", "MoodAnalys")]
-        [TestMethod, TestCategory("Reflection")]
+        [TestMethod, TestCategory("Reflection"), TestCategory("TC 4")]
         public void CreateObjectOfMoodAnalyseInvalidConstructor(string className, string constructor)
         {
             //Act
             try
             {
                 var obj = MoodAnalyserFactory.CreateMoodAnalyserObject(className, constructor);
+            }
+            //Assert
+            catch (MoodAnalyserExceptions e)
+            {
+                Assert.AreEqual("MoodAnalyser exception : No such constructor found", e.Message);
+            }
+        }
+
+        /// <summary>
+        /// TC 5.1 When given valid class name,constructor return object
+        /// </summary>
+        /// <param name="className"></param>
+        /// <param name="constructor"></param>
+        /// <param name="message"></param>
+        [DataRow("MoodAnalyse", "MoodAnalyse" , "message")]
+        [TestMethod, TestCategory("Reflection"), TestCategory("TC 5")]
+        public void CreateParameterizedObjectOfMoodAnalyse(string className, string constructor , string message)
+        {
+            //Arrange
+            moodAnalyse = new MoodAnalyse(message);
+            //Act
+            var obj = MoodAnalyserFactory.CreateMoodAnalyserParameterizedObject(className, constructor, message);
+            //Assert
+            obj.Equals(moodAnalyse);
+        }
+
+        /// <summary>
+        /// TC 5.2 When given invalid class name then throw exception
+        /// </summary>
+        /// <param name="className"></param>
+        /// <param name="constructor"></param>
+        /// <param name="message"></param>
+        [DataRow("MoodAnalys", "MoodAnalyse", "message")]
+        [TestMethod, TestCategory("Reflection"), TestCategory("TC 5")]
+        public void CreateParameterizedObjectOfMoodAnalyseInvalidClassName(string className, string constructor, string message)
+        {
+            //Arrange
+            moodAnalyse = new MoodAnalyse(message);
+            //Act
+            try
+            {
+                var obj = MoodAnalyserFactory.CreateMoodAnalyserParameterizedObject(className, constructor, message);
+            }
+            //Assert
+            catch(MoodAnalyserExceptions e)
+            {
+                Assert.AreEqual("MoodAnalyser exception : No such class found", e.Message);
+            }
+        }
+
+        /// <summary>
+        /// TC 5.3 When given invalid constructor then throw exception
+        /// </summary>
+        /// <param name="className"></param>
+        /// <param name="constructor"></param>
+        /// <param name="message"></param>
+        [DataRow("MoodAnalyse", "MoodAnalys", "message")]
+        [TestMethod, TestCategory("Reflection") , TestCategory("TC 5")]
+        public void CreateParameterizedObjectOfMoodAnalyseInvalidConstructor(string className, string constructor, string message)
+        {
+            //Arrange
+            moodAnalyse = new MoodAnalyse(message);
+            //Act
+            try
+            {
+                var obj = MoodAnalyserFactory.CreateMoodAnalyserParameterizedObject(className, constructor, message);
             }
             //Assert
             catch (MoodAnalyserExceptions e)

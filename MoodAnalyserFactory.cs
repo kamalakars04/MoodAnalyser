@@ -41,5 +41,30 @@ namespace MoodAnalyser
                 throw new MoodAnalyserExceptions(MoodAnalyserExceptions.ExceptionType.NO_SUCH_CLASS, "No such class found");
             }
         }
+
+        public static Object CreateMoodAnalyserParameterizedObject(string className, string constructor , string message)
+        {
+            //getting the type of class MoodAnalyse
+            Type type = typeof(MoodAnalyse);
+            //If the class name exists in given assembly
+            if (type.Name.Equals(className) || type.FullName.Equals(className))
+            {
+                //If the constructor passed is correct
+                if (type.Name.Equals(constructor))
+                {
+                    ConstructorInfo constructorInfo = type.GetConstructor(new Type[] {typeof(string)});
+                    return constructorInfo.Invoke(new Object[] {message});
+                }
+                //If the constructor passed doesnt exist then throw error
+                else
+                    throw new MoodAnalyserExceptions(MoodAnalyserExceptions.ExceptionType.NO_SUCH_CONSTRUCTOR, "No such constructor found");
+            }
+            //If the class passed doesnt exist throw custom exception
+            else
+            {
+                throw new MoodAnalyserExceptions(MoodAnalyserExceptions.ExceptionType.NO_SUCH_CLASS, "No such class found");
+            }
+        }
+
     }
 }
