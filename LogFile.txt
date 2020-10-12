@@ -116,3 +116,67 @@
 2020-10-10 22:10:40.2014 INFO Initiated message through a contructor
 2020-10-10 22:10:40.2014 DEBUG User entered the analyse mood method
 2020-10-10 22:10:40.2014 INFO User mood is sad
+2020-10-12 08:51:34.2652 INFO User entered a valid first name
+2020-10-12 08:51:37.8090 WARN User entry is a invalid Format
+2020-10-12 16:48:50.7124 INFO Created a board
+2020-10-12 16:48:50.8916 INFO Show Board initiated
+2020-10-12 16:48:51.2178 INFO Tossed to select the first turn
+2020-10-12 16:48:51.2437 INFO Letter selection initiated
+2020-10-12 16:49:02.6169 INFO Game started
+2020-10-12 16:49:24.4244 INFO Show Board initiated
+2020-10-12 16:49:24.4519 INFO Game continues to next turn
+2020-10-12 16:49:24.4736 INFO Game started
+2020-10-12 16:49:24.5758 INFO System selected corner
+2020-10-12 16:49:24.5893 INFO Show Board initiated
+2020-10-12 16:49:24.6071 INFO Game continues to next turn
+2020-10-12 16:49:24.6203 INFO Game started
+2020-10-12 16:49:58.2971 INFO Show Board initiated
+2020-10-12 16:49:58.3196 INFO Game continues to next turn
+2020-10-12 16:49:58.3362 INFO Game started
+2020-10-12 16:49:58.3528 INFO Show Board initiated
+2020-10-12 16:49:58.3762 INFO Game continues to next turn
+2020-10-12 16:49:58.3953 INFO Game started
+2020-10-12 16:50:18.0973 INFO Show Board initiated
+2020-10-12 16:50:18.1178 INFO Game continues to next turn
+2020-10-12 16:50:18.1356 INFO Game started
+2020-10-12 16:50:18.1541 INFO Show Board initiated
+2020-10-12 16:50:18.1775 INFO Game continues to next turn
+2020-10-12 16:50:18.1953 INFO Game started
+2020-10-12 16:50:39.0167 INFO Show Board initiated
+2020-10-12 16:50:39.0463 INFO Game continues to next turn
+2020-10-12 16:50:39.0627 INFO Game started
+2020-10-12 16:50:39.0795 INFO Show Board initiated
+2020-10-12 16:50:39.0991 INFO Game ended with definite result
+2020-10-12 20:13:36.7010 INFO Initiated message through a contructor
+2020-10-12 20:13:36.7369 DEBUG User entered the analyse mood method
+2020-10-12 20:13:36.7369 INFO Initiated message through a contructor
+2020-10-12 20:13:36.7369 DEBUG User entered the analyse mood method
+2020-10-12 20:13:36.7369 INFO User mood is happy
+2020-10-12 20:13:36.8097 INFO Initiated message through a contructor
+2020-10-12 20:13:36.8097 DEBUG User entered the analyse mood method
+2020-10-12 20:13:36.8097 INFO Initiated message through a contructor
+2020-10-12 20:13:36.8097 DEBUG User entered the analyse mood method
+2020-10-12 20:13:36.8097 INFO User mood is sad
+2020-10-12 20:21:26.6357 INFO Initiated message through a contructor
+2020-10-12 20:21:26.6572 DEBUG User entered the analyse mood method
+2020-10-12 20:21:26.6572 INFO Initiated message through a contructor
+2020-10-12 20:21:26.6572 DEBUG User entered the analyse mood method
+2020-10-12 20:21:26.6572 INFO User mood is happy
+2020-10-12 20:21:26.7243 INFO Initiated message through a contructor
+2020-10-12 20:21:26.7243 DEBUG User entered the analyse mood method
+2020-10-12 20:21:26.7243 INFO Initiated message through a contructor
+2020-10-12 20:21:26.7243 DEBUG User entered the analyse mood method
+2020-10-12 20:21:26.7243 INFO User mood is sad
+2020-10-12 20:28:12.1802 INFO Initiated message through a contructor
+2020-10-12 20:28:12.2166 DEBUG User entered the analyse mood method
+2020-10-12 20:28:12.2331 INFO User mood is happy
+2020-10-12 20:31:17.5192 INFO Initiated message through a contructor
+2020-10-12 20:31:17.5413 DEBUG User entered the analyse mood method
+2020-10-12 20:31:17.5430 INFO Initiated message through a contructor
+2020-10-12 20:31:17.5430 DEBUG User entered the analyse mood method
+2020-10-12 20:31:17.5430 INFO User mood is happy
+2020-10-12 20:31:17.6018 INFO Initiated message through a contructor
+2020-10-12 20:31:17.6018 DEBUG User entered the analyse mood method
+2020-10-12 20:31:17.6037 INFO Initiated message through a contructor
+2020-10-12 20:31:17.6037 DEBUG User entered the analyse mood method
+2020-10-12 20:31:17.6037 INFO User mood is sad

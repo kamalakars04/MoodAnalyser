@@ -105,13 +105,11 @@ C:\Users\kamalakar\Desktop\bridge labs\MSTestForMoodAnalyser\obj\Debug\netcoreap
 C:\Users\kamalakar\Desktop\bridge labs\MSTestForMoodAnalyser\obj\Debug\netcoreapp3.1\MSTestForMoodAnalyser.csproj.CopyComplete
 C:\Users\kamalakar\Desktop\bridge labs\MSTestForMoodAnalyser\obj\Debug\netcoreapp3.1\MSTestForMoodAnalyser.dll
 C:\Users\kamalakar\Desktop\bridge labs\MSTestForMoodAnalyser\obj\Debug\netcoreapp3.1\MSTestForMoodAnalyser.pdb
-C:\Users\kamalakar\Desktop\bridge labs\MoodAnalyser\MSTestForMoodAnalyser\obj\Debug\netcoreapp3.1\MSTestForMoodAnalyser.dll
-C:\Users\kamalakar\Desktop\bridge labs\MoodAnalyser\MSTestForMoodAnalyser\obj\Debug\netcoreapp3.1\MSTestForMoodAnalyser.pdb
 C:\Users\kamalakar\Desktop\bridge labs\MoodAnalyser\MSTestForMoodAnalyser\bin\Debug\netcoreapp3.1\NLog.config
+C:\Users\kamalakar\Desktop\bridge labs\MoodAnalyser\MSTestForMoodAnalyser\bin\Debug\netcoreapp3.1\MoodAnalyser.exe
 C:\Users\kamalakar\Desktop\bridge labs\MoodAnalyser\MSTestForMoodAnalyser\bin\Debug\netcoreapp3.1\Microsoft.VisualStudio.TestPlatform.MSTest.TestAdapter.dll
 C:\Users\kamalakar\Desktop\bridge labs\MoodAnalyser\MSTestForMoodAnalyser\bin\Debug\netcoreapp3.1\Microsoft.VisualStudio.TestPlatform.MSTestAdapter.PlatformServices.Interface.dll
 C:\Users\kamalakar\Desktop\bridge labs\MoodAnalyser\MSTestForMoodAnalyser\bin\Debug\netcoreapp3.1\Microsoft.VisualStudio.TestPlatform.MSTestAdapter.PlatformServices.dll
-C:\Users\kamalakar\Desktop\bridge labs\MoodAnalyser\MSTestForMoodAnalyser\bin\Debug\netcoreapp3.1\MoodAnalyser.exe
 C:\Users\kamalakar\Desktop\bridge labs\MoodAnalyser\MSTestForMoodAnalyser\bin\Debug\netcoreapp3.1\MSTestForMoodAnalyser.deps.json
 C:\Users\kamalakar\Desktop\bridge labs\MoodAnalyser\MSTestForMoodAnalyser\bin\Debug\netcoreapp3.1\MSTestForMoodAnalyser.runtimeconfig.json
 C:\Users\kamalakar\Desktop\bridge labs\MoodAnalyser\MSTestForMoodAnalyser\bin\Debug\netcoreapp3.1\MSTestForMoodAnalyser.runtimeconfig.dev.json
@@ -212,3 +210,5 @@ C:\Users\kamalakar\Desktop\bridge labs\MoodAnalyser\MSTestForMoodAnalyser\obj\De
 C:\Users\kamalakar\Desktop\bridge labs\MoodAnalyser\MSTestForMoodAnalyser\obj\Debug\netcoreapp3.1\MSTestForMoodAnalyser.AssemblyInfoInputs.cache
 C:\Users\kamalakar\Desktop\bridge labs\MoodAnalyser\MSTestForMoodAnalyser\obj\Debug\netcoreapp3.1\MSTestForMoodAnalyser.AssemblyInfo.cs
 C:\Users\kamalakar\Desktop\bridge labs\MoodAnalyser\MSTestForMoodAnalyser\obj\Debug\netcoreapp3.1\MSTestForMoodAnalyser.csproj.CopyComplete
+C:\Users\kamalakar\Desktop\bridge labs\MoodAnalyser\MSTestForMoodAnalyser\obj\Debug\netcoreapp3.1\MSTestForMoodAnalyser.dll
+C:\Users\kamalakar\Desktop\bridge labs\MoodAnalyser\MSTestForMoodAnalyser\obj\Debug\netcoreapp3.1\MSTestForMoodAnalyser.pdb
