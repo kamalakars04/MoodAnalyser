@@ -9,6 +9,11 @@ namespace MoodAnalyser
     {
         private readonly Logger logger = LogManager.GetCurrentClassLogger();
         private string message;
+
+        public MoodAnalyse()
+        {
+            Console.WriteLine("Default constructor");
+        }
         public MoodAnalyse(string message)
         {
             logger.Info("Initiated message through a contructor");
