@@ -80,10 +80,9 @@ namespace MSTestForMoodAnalyser
         public void CreateObjectOfMoodAnalyse(string className , string constructor)
         {
             //Arrange
-            string message = null;
             moodAnalyse = new MoodAnalyse();
             //Act
-            var obj = MoodAnalyserFactory.CreateMoodAnalyserObject(className, constructor, null);
+            var obj = MoodAnalyserReflector.CreateMoodAnalyserObject(className, constructor, null);
             //Assert
             obj.Equals(moodAnalyse);
         }
@@ -100,7 +99,7 @@ namespace MSTestForMoodAnalyser
             //Act
             try
             {
-                var obj = MoodAnalyserFactory.CreateMoodAnalyserObject(className, constructor, null);
+                var obj = MoodAnalyserReflector.CreateMoodAnalyserObject(className, constructor, null);
             }
             //Assert
             catch(MoodAnalyserExceptions e)
@@ -121,7 +120,7 @@ namespace MSTestForMoodAnalyser
             //Act
             try
             {
-                var obj = MoodAnalyserFactory.CreateMoodAnalyserObject(className, constructor , message);
+                var obj = MoodAnalyserReflector.CreateMoodAnalyserObject(className, constructor , message);
             }
             //Assert
             catch (MoodAnalyserExceptions e)
@@ -143,7 +142,7 @@ namespace MSTestForMoodAnalyser
             //Arrange
             moodAnalyse = new MoodAnalyse(message);
             //Act
-            var obj = MoodAnalyserFactory.CreateMoodAnalyserObject(className, constructor, message);
+            var obj = MoodAnalyserReflector.CreateMoodAnalyserObject(className, constructor, message);
             //Assert
             obj.Equals(moodAnalyse);
         }
@@ -163,7 +162,7 @@ namespace MSTestForMoodAnalyser
             //Act
             try
             {
-                var obj = MoodAnalyserFactory.CreateMoodAnalyserObject(className, constructor, message);
+                var obj = MoodAnalyserReflector.CreateMoodAnalyserObject(className, constructor, message);
             }
             //Assert
             catch(MoodAnalyserExceptions e)
@@ -187,12 +186,56 @@ namespace MSTestForMoodAnalyser
             //Act
             try
             {
-                var obj = MoodAnalyserFactory.CreateMoodAnalyserObject(className, constructor, message);
+                var obj = MoodAnalyserReflector.CreateMoodAnalyserObject(className, constructor, message);
             }
             //Assert
             catch (MoodAnalyserExceptions e)
             {
                 Assert.AreEqual("MoodAnalyser exception : No such constructor found", e.Message);
+            }
+        }
+
+        /// <summary>
+        /// TC 6.1 When given valid class name , constructor ,message as happy and valid method name then should return happy mood
+        /// </summary>
+        /// <param name="className"></param>
+        /// <param name="constructor"></param>
+        /// <param name="message"></param>
+        /// <param name="methodName"></param>
+        [DataRow("MoodAnalyser.MoodAnalyse", "MoodAnalyse", "Happy" , "AnalyseMood")]
+        [TestMethod, TestCategory("Reflection"), TestCategory("TC 6")]
+        public void InvokeMethodOfMoodAnalyser(string className, string constructor, string message, string methodName)
+        {
+            //Arrange
+            moodAnalyse = new MoodAnalyse("Happy");
+            //Act
+            object actual = MoodAnalyserReflector.InvokeMethod(className, constructor, message, methodName);
+            //Assert
+            Assert.AreEqual("happy mood", actual);
+        }
+
+        /// <summary>
+        /// TC 6.2 When given valid class name , constructor ,message and invalid method name then should throw exception 
+        /// </summary>
+        /// <param name="className"></param>
+        /// <param name="constructor"></param>
+        /// <param name="message"></param>
+        /// <param name="methodName"></param>
+        [DataRow("MoodAnalyser.MoodAnalyse", "MoodAnalyse", "Happy", "InvalidMethod")]
+        [TestMethod, TestCategory("Reflection"), TestCategory("TC 6")]
+        public void InvokeMethodOfMoodAnalyserInvalid(string className, string constructor, string message, string methodName)
+        {
+            //Act
+            try
+            {
+                moodAnalyse = new MoodAnalyse("Happy");
+                object expected = moodAnalyse.AnalyseMood();
+                object actual = MoodAnalyserReflector.InvokeMethod(className, constructor, message, methodName);
+            }
+            //Assert
+            catch (MoodAnalyserExceptions e)
+            {
+                Assert.AreEqual("MoodAnalyser exception : No such method found", e.Message);
             }
         }
     }

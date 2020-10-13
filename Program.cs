@@ -14,7 +14,7 @@ namespace MoodAnalyser
             MoodAnalyse moodAnalyse = new MoodAnalyse(message);
             string mood = moodAnalyse.AnalyseMood();
             //Creating MoodAnalyser object at run time
-            MoodAnalyserFactory.CreateMoodAnalyserObject("MoodAnalyser.MoodAnalyse" , "MoodAnalyse" , "happy");
+            MoodAnalyserReflector.CreateMoodAnalyserObject("MoodAnalyser.MoodAnalyse" , "MoodAnalyse" , "happy");
         }
     }
 }
