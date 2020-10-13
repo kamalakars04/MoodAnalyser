@@ -8,7 +8,7 @@ namespace MoodAnalyser
     public class MoodAnalyse
     {
         private readonly Logger logger = LogManager.GetCurrentClassLogger();
-        private string message;
+        private string message="abc";
 
         public MoodAnalyse()
         {
