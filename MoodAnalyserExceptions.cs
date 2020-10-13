@@ -11,7 +11,8 @@ namespace MoodAnalyser
             NULL_TYPE,EMPTY_TYPE,
             NO_SUCH_CLASS,
             NO_SUCH_CONSTRUCTOR,
-            NO_SUCH_METHOD
+            NO_SUCH_METHOD,
+            NO_SUCH_FIELD
         }
 
         ExceptionType type;
