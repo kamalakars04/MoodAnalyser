@@ -8,7 +8,7 @@ namespace MoodAnalyser
     public class MoodAnalyse
     {
         private readonly Logger logger = LogManager.GetCurrentClassLogger();
-        private string message="abc";
+        public string message=" ";
 
         public MoodAnalyse()
         {
@@ -32,9 +32,6 @@ namespace MoodAnalyser
                 //If input is empty then throw exception of empty type
                 if (message == string.Empty)
                     throw new MoodAnalyserExceptions(MoodAnalyserExceptions.ExceptionType.EMPTY_TYPE, "Mood cannot be empty");
-                //If input is null then throw exception of null type
-                if (message == null)
-                    throw new MoodAnalyserExceptions(MoodAnalyserExceptions.ExceptionType.NULL_TYPE, "Null mood not accepted");
                 if (message.ToLower().Contains("sad"))
                 {
                     logger.Info("User mood is sad");
@@ -47,10 +44,10 @@ namespace MoodAnalyser
                     return "happy mood";
                 }
             }
-            catch (MoodAnalyserExceptions e)
+            //If input is null then throw exception of null type
+            catch (NullReferenceException)
             {
-                Console.WriteLine(e.Message);
-                return e.Message;
+                throw new MoodAnalyserExceptions(MoodAnalyserExceptions.ExceptionType.NULL_TYPE, "Null mood not accepted");
             }
         }
     }
