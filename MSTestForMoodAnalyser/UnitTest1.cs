@@ -83,7 +83,7 @@ namespace MSTestForMoodAnalyser
             string message = null;
             moodAnalyse = new MoodAnalyse();
             //Act
-            var obj = MoodAnalyserFactory.CreateMoodAnalyserObject(className, constructor);
+            var obj = MoodAnalyserFactory.CreateMoodAnalyserObject(className, constructor, null);
             //Assert
             obj.Equals(moodAnalyse);
         }
@@ -100,7 +100,7 @@ namespace MSTestForMoodAnalyser
             //Act
             try
             {
-                var obj = MoodAnalyserFactory.CreateMoodAnalyserObject(className, constructor);
+                var obj = MoodAnalyserFactory.CreateMoodAnalyserObject(className, constructor, null);
             }
             //Assert
             catch(MoodAnalyserExceptions e)
@@ -114,14 +114,14 @@ namespace MSTestForMoodAnalyser
         /// </summary>
         /// <param name="className"></param>
         /// <param name="constructor"></param>
-        [DataRow("MoodAnalyser.MoodAnalyse", "MoodAnalys")]
+        [DataRow("MoodAnalyser.MoodAnalyse", "MoodAnalys", null)]
         [TestMethod, TestCategory("Reflection"), TestCategory("TC 4")]
-        public void CreateObjectOfMoodAnalyseInvalidConstructor(string className, string constructor)
+        public void CreateObjectOfMoodAnalyseInvalidConstructor(string className, string constructor, string message)
         {
             //Act
             try
             {
-                var obj = MoodAnalyserFactory.CreateMoodAnalyserObject(className, constructor);
+                var obj = MoodAnalyserFactory.CreateMoodAnalyserObject(className, constructor , message);
             }
             //Assert
             catch (MoodAnalyserExceptions e)
@@ -143,7 +143,7 @@ namespace MSTestForMoodAnalyser
             //Arrange
             moodAnalyse = new MoodAnalyse(message);
             //Act
-            var obj = MoodAnalyserFactory.CreateMoodAnalyserParameterizedObject(className, constructor, message);
+            var obj = MoodAnalyserFactory.CreateMoodAnalyserObject(className, constructor, message);
             //Assert
             obj.Equals(moodAnalyse);
         }
@@ -163,7 +163,7 @@ namespace MSTestForMoodAnalyser
             //Act
             try
             {
-                var obj = MoodAnalyserFactory.CreateMoodAnalyserParameterizedObject(className, constructor, message);
+                var obj = MoodAnalyserFactory.CreateMoodAnalyserObject(className, constructor, message);
             }
             //Assert
             catch(MoodAnalyserExceptions e)
@@ -187,7 +187,7 @@ namespace MSTestForMoodAnalyser
             //Act
             try
             {
-                var obj = MoodAnalyserFactory.CreateMoodAnalyserParameterizedObject(className, constructor, message);
+                var obj = MoodAnalyserFactory.CreateMoodAnalyserObject(className, constructor, message);
             }
             //Assert
             catch (MoodAnalyserExceptions e)
